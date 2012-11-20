@@ -25,7 +25,7 @@ class UsuariosController extends AppController {
 
 	public function index() {
 		$this->Usuario->recursive = 0;
-		$this->set('usuarios', $this->paginate());
+		$this->set('usuarios', $this->Usuario->find('all'));
 	}
 
 	public function view($id = null) {
@@ -41,7 +41,7 @@ class UsuariosController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Usuario->create();
 			$this->request->data['Usuario']['fecha_registro'] = $this->fecha_hora();
-			$this->request->data['Usuario']['tipousuarios_id'] = 2;
+			$this->request->data['Usuario']['tipousuario_id'] = 2;
 			if ($this->Usuario->save($this->request->data)) {
 				$this->Session->setFlash(__('The usuario has been saved'));
 				$this->redirect(array('action' => 'index'));

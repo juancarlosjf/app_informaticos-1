@@ -12,7 +12,10 @@ class Usuario extends AppModel {
 		return true;
 	}
 	
-	public $belongsTo = array('Paises','Tipousuarios');
+	public $belongsTo = array('Paise','Tipousuario');
+
+	public $hasMany = array('Colaboradore','Comentario','Proyecto','Publicacione');
+
 }
 
 ?>
