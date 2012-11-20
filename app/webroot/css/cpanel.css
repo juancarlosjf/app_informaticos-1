@@ -1,0 +1,116 @@
+body {
+	background:#fafafa url(../img/layout/bg/retina_wood.png);
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+
+footer{
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #eee;
+  text-align:center;
+  font-size: 11px;
+  line-height: 15px;
+  height:55px;
+} 
+#sidebar .btn{
+	text-align: left;
+}
+.member-box {
+	display: block;
+    padding: 10px;
+    background-color: #FBFBFB;
+    background-image: -moz-linear-gradient(center top , #FFFFFF, #F5F5F5);
+    background-repeat: repeat-x;
+    border: 1px solid #DDDDDD;
+    box-shadow: 0 1px 0 #FFFFFF inset;
+	margin-bottom:10px;
+}
+.round-all {
+    border-radius: 3px 3px 3px 3px;
+}
+img.member-box-avatar {
+    height: 60px;
+    padding: 2px;
+    width: 60px;
+}
+.member-box-links {
+    font-size: 85%;
+}
+/* sidebar */
+
+#sidebar li a:link, #sidebar li a:visited {
+    display: block;
+    font-size: 13px;
+    line-height: 1.2em;
+    padding: 6px 15px;
+}
+#sidebar li a:hover {
+    color: #000000;
+    text-decoration: none;
+    transition: all 0.4s linear 0s;
+}
+.accordion-inner{
+	background-color: #fff;
+}
+/* para el contenido del Cpanel*/
+.breadcrumb {
+    background-color: #FBFBFB;
+    background-image: -moz-linear-gradient(center top , #FFFFFF, #F5F5F5);
+    background-repeat: repeat-x;
+    border: 1px solid #DDDDDD;
+    box-shadow: 0 1px 0 #FFFFFF inset;
+    list-style: none outside none;
+    margin: 0 0 18px;
+    padding: 7px 14px;
+}
+.breadcrumb .active {
+  color: #444;
+}
+
+/*================ Box ======================*/
+.box {
+	margin-bottom:10px;
+	border: 1px solid #DDDDDD;
+	-webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+	border-top:0;
+}
+.box:before,
+.box:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.box:after {
+  clear: both;
+}
+.box h4.box-header {
+	font-size:13px;
+	margin: 0;
+	cursor: move;
+    list-style: none outside none;
+    padding: 7px;
+    size: 10px;
+	background-color: #FBFBFB;
+    background-image: -moz-linear-gradient(center top , #FFFFFF, #F5F5F5);
+    background-repeat: repeat-x;
+    border: 1px solid #DDDDDD;
+    box-shadow: 0 1px 0 #FFFFFF inset;
+	border-left:0;
+	border-right:0;
+}
+.box-content {
+	padding:18px 12px 0 12px;
+	background-color: #fff;	
+}
+/*================ Round Corners and text effects ======================*/
+.round-top {
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-top-right-radius: 3px;
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-topright: 3px;
+	border-radius: 3px 3px 0 0;
+}
