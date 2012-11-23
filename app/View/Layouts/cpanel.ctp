@@ -9,14 +9,15 @@
     <meta name="description" content="Informáticos sin fronteras" />
 	<meta name="author" content="" />
 
-    <?php echo $this->Html->css(array('bootstrap','cpanel','bootstrap-responsive.min')); 
+    <?php echo $this->Html->css(array('bootstrap','cpanel','style','bootstrap-responsive.min')); 
 		  echo $this->Html->script(array('jquery','bootstrap.min','jquery.dataTables'));
 	?>
 	
 	<?php echo $scripts_for_layout;?>
 </head>
 <body>
-<?php $menu = $this->params['controller'];?>
+<?php $menu = $this->params['controller'];
+	  $action = $this->params['action'];?>
 <div class="navbar navbar-inverse navbar-fixed-top">
 	<div class="navbar-inner">
 		<div class="container-fluid">
@@ -28,7 +29,7 @@
 			<a href="#" class="brand">Panel de Administración</a>
 			<div class="nav-collapse collapse">
 				<ul class="nav">
-					<li <?php if($menu == 'Editores' or $menu == 'editores'): ?> class="active" <?php endif;?> >
+					<li <?php if(($menu == 'Editores' or $menu == 'editores') and $action == 'proyectos'): ?> class="active" <?php endif;?> >
 							<?php echo $this->Html->link('Mis proyectos','/Editores/proyectos');?>
 					</li>
 					<li <?php if($menu == 'Pacientes' or $menu == 'pacientes'): ?> class="active" <?php endif;?>>
@@ -56,7 +57,7 @@
 			<div id="sidebar" class="accordion">
 				<div class="accordion-group">
 					<div class="accordion-heading btn-info-light">
-						<?php echo $this->Html->link('<i class="icon-user icon-white"></i> Mi Perfil','#',array('escape'=>false,'class'=>'accordion-toggle btn btn-info dashboard')); ?>
+						<?php echo $this->Html->link('<i class="icon-user icon-white"></i> Mi Perfil','/Editores/perfil',array('escape'=>false,'class'=>'accordion-toggle btn btn-info dashboard')); ?>
 					</div>
 				</div>
 				<div class="accordion-group">
