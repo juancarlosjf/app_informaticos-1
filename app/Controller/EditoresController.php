@@ -133,7 +133,7 @@ class EditoresController extends AppController {
 				$this->Session->setFlash(__('The publicacione could not be saved. Please, try again.'));
 			}
 		}
-		$categorias = $this->Publicacione->Categorium->find('list');
+		$categorias = $this->Publicacione->Categoria->find('list');
 		$this->set(compact('categorias'));
 	}
 
@@ -154,7 +154,7 @@ class EditoresController extends AppController {
 		else {
 			$this->request->data = $this->Publicacione->read(null, $id);
 		}
-		$categorias = $this->Publicacione->Categorium->find('list');
+		$categorias = $this->Publicacione->Categoria->find('list');
 		$this->set(compact('categorias'));
 	}
 

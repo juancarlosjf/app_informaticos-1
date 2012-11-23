@@ -1,7 +1,7 @@
 <div>
     <ul class="breadcrumb">
         <li><?php echo $this->Html->link('Panel','');?> <span class="divider">/</span></li>
-        <li class="active">Proyectos</li>
+        <li class="active">Publicaciones</li>
     </ul>
 </div>
 
@@ -10,7 +10,7 @@
 		<div class="widget-header">
 			<span class="title">
 				<i class="icon-tag"></i>
-				Mis proyectos
+				Mis publicaciones
 			</span>
 		</div>
 			<div class="widget-content">
@@ -23,17 +23,17 @@
 						<th>Acciones</th>
 					</thead> 
 					<tbody>
-						<?php foreach ($proyectos as $proyecto):?>
+						<?php foreach ($publicaciones as $publicacion):?>
 						<tr>
-							<td><?php echo $proyecto['Proyecto']['id']; ?></td>
-							<td><?php echo $proyecto['Proyecto']['titulo']; ?></td>
-							<td><?php echo $proyecto['Proyecto']['fecha']; ?></td>
-							<td><?php echo $proyecto['Categoria']['categoria']; ?></td>
+							<td><?php echo $publicacion['Publicacione']['id']; ?></td>
+							<td><?php echo $publicacion['Publicacione']['titulo']; ?></td>
+							<td><?php echo $publicacion['Publicacione']['fecha']; ?></td>
+							<td><?php echo $publicacion['Categoria']['categoria']; ?></td>
 							<td align="center">
-								<?php echo $this->Html->link('<i class="icon-edit icon-white"></i>',array('action'=>'proyecto_edit',$proyecto['Proyecto']['id']),array('title'=>'Editar','escape'=>false,'class'=>'btn btn-info'));?>
+								<?php echo $this->Html->link('<i class="icon-edit icon-white"></i>',array('action'=>'publicacion_edit',$publicacion['Publicacione']['id']),array('title'=>'Editar','escape'=>false,'class'=>'btn btn-info'));?>
 
 								<?php echo $this->Form->postLink('<i class="icon-trash icon-white"></i>',
-									array('action' => 'proyecto_delete', $proyecto['Proyecto']['id']),
+									array('action' => 'publicacion_delete', $publicacion['Publicacione']['id']),
 									array('class'=>'btn btn-danger','title'=>'Eliminar','escape'=>false,'confirm' => '¿Está seguro que desea eliminar?')); ?>
             				</td>
 						</tr>

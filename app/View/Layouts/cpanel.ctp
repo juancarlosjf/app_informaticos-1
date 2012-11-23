@@ -32,7 +32,7 @@
 					<li <?php if(($menu == 'Editores' or $menu == 'editores') and $action == 'proyectos'): ?> class="active" <?php endif;?> >
 							<?php echo $this->Html->link('Mis proyectos','/Editores/proyectos');?>
 					</li>
-					<li <?php if($menu == 'Pacientes' or $menu == 'pacientes'): ?> class="active" <?php endif;?>>
+					<li <?php if(($menu == 'Editores' or $menu == 'editores') and $action == 'publicaciones'): ?> class="active" <?php endif;?> >
 							<?php echo $this->Html->link('Mis publicaciones','/Editores/publicaciones');?>
 					</li>
 				</ul>
@@ -63,6 +63,11 @@
 				<div class="accordion-group">
 					<div class="accordion-heading btn-info-light">
 						<?php echo $this->Html->link('<i class="icon-list-alt icon-white"></i> Nuevo proyecto','/Editores/proyecto_add',array('escape'=>false,'class'=>'accordion-toggle btn btn-info dashboard')); ?>
+					</div>
+				</div>
+				<div class="accordion-group">
+					<div class="accordion-heading btn-info-light">
+						<?php echo $this->Html->link('<i class="icon-file icon-white"></i> Nueva publicacion','/Editores/publicacion_add',array('escape'=>false,'class'=>'accordion-toggle btn btn-info dashboard')); ?>
 					</div>
 				</div>
 				<div class="accordion-group">
