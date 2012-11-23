@@ -61,20 +61,8 @@
 					</div>
 				</div>
 				<div class="accordion-group">
-					<div class="accordion-heading">
-						<?php echo $this->Html->link('<i class="icon-align-center icon-white"></i> Mis Proyectos','#collapseOne',array('escape'=>false,'class'=>'accordion-toggle elements btn btn-info open','data-toggle'=>'collapse')); ?>
-					</div>
-					<div id="collapseOne" class="collapse">
-						<div class="accordion-inner">
-							<ul class="unstyled">
-								<li>
-									<?php echo $this->Html->link('Listado de Proyectos','/Editores/proyectos');?>
-								</li>
-								<li>
-									<?php echo $this->Html->link('Nuevo Proyecto','/Editores/nuevo_proyecto');?>
-								</li>
-							</ul>
-						</div>
+					<div class="accordion-heading btn-info-light">
+						<?php echo $this->Html->link('<i class="icon-list-alt icon-white"></i> Nuevo proyecto','/Editores/proyecto_add',array('escape'=>false,'class'=>'accordion-toggle btn btn-info dashboard')); ?>
 					</div>
 				</div>
 				<div class="accordion-group">
@@ -113,6 +101,6 @@
 		Proyectos Internacionales
 	</footer>			
 </div>
-<?php echo $this->Html->script(array('script')); ?>
+<?php echo $this->Html->script(array('funciones')); ?>
 </body>
 </html>
