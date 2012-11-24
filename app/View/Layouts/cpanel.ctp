@@ -29,6 +29,9 @@
 			<a href="#" class="brand">Panel de Administración</a>
 			<div class="nav-collapse collapse">
 				<ul class="nav">
+					<li <?php if(($menu == 'Editores' or $menu == 'editores') and $action == 'home'): ?> class="active" <?php endif;?> >
+							<?php echo $this->Html->link('Panel','/Editores/home');?>
+					</li>
 					<li <?php if(($menu == 'Editores' or $menu == 'editores') and $action == 'proyectos'): ?> class="active" <?php endif;?> >
 							<?php echo $this->Html->link('Mis proyectos','/Editores/proyectos');?>
 					</li>
@@ -72,7 +75,7 @@
 				</div>
 				<div class="accordion-group">
 					<div class="accordion-heading">
-						<?php echo $this->Html->link('<i class="icon-align-center icon-white"></i> Mis Mensajes','#collapseTwo',array('escape'=>false,'class'=>'accordion-toggle elements btn btn-info open','data-toggle'=>'collapse')); ?>
+						<?php echo $this->Html->link('<i class="icon-envelope"></i> Mis Mensajes','#collapseTwo',array('escape'=>false,'class'=>'accordion-toggle elements btn btn-info open','data-toggle'=>'collapse')); ?>
 					</div>
 					<div id="collapseTwo" class="collapse">
 						<div class="accordion-inner">

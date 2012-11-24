@@ -1,6 +1,6 @@
 <div>
     <ul class="breadcrumb">
-        <li><?php echo $this->Html->link('Panel','');?> <span class="divider">/</span></li>
+        <li><?php echo $this->Html->link('Panel','/Editores/home');?> <span class="divider">/</span></li>
         <li class="active">Proyectos</li>
     </ul>
 </div>
