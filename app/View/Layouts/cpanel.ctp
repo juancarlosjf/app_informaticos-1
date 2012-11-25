@@ -14,6 +14,7 @@
 	?>
 	
 	<?php echo $scripts_for_layout;?>
+
 </head>
 <body>
 <?php $menu = $this->params['controller'];
