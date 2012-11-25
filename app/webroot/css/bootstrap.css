@@ -721,7 +721,7 @@ h4 small {
 .page-header {
   padding-bottom: 9px;
   margin: 20px 0 30px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #eeeeee;
 }
 
 ul,
@@ -2142,6 +2142,8 @@ table th[class*="span"],
   background-color: #c4e3f3;
 }
 
+/* DESACTIVADO POR JJ PARA QUE NO DESCUADRE LA PLANTILLA DEL ADMIN
+
 [class^="icon-"],
 [class*=" icon-"] {
   display: inline-block;
@@ -2155,7 +2157,7 @@ table th[class*="span"],
   background-position: 14px 14px;
   background-repeat: no-repeat;
 }
-
+*/
 /* White icons with optional class, or on hover/active states of certain elements */
 
 .icon-white,

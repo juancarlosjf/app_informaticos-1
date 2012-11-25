@@ -9,12 +9,11 @@
     <meta name="description" content="Informáticos sin fronteras" />
 	<meta name="author" content="" />
 
-    <?php echo $this->Html->css(array('bootstrap','cpanel','style','bootstrap-responsive.min')); 
-		  echo $this->Html->script(array('jquery','bootstrap.min','jquery.dataTables'));
+    <?php echo $this->Html->css(array('bootstrap','cpanel','style','bootstrap-responsive.min','elrte.min')); 
+		  echo $this->Html->script(array('jquery','bootstrap.min','jquery.dataTables','elrte.full','elrte.es'));
 	?>
 	
 	<?php echo $scripts_for_layout;?>
-
 </head>
 <body>
 <?php $menu = $this->params['controller'];
