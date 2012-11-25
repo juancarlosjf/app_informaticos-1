@@ -4,6 +4,7 @@ App::uses('AppController', 'Controller');
 class EditoresController extends AppController {
 
 	public $uses = array('Usuario','Proyecto','Publicacione','Categoria','Comentario','Colaboradore');
+
 	public function beforeFilter() {    
 		$this->layout = 'cpanel';     
 		$this->Auth->allowedActions = array('*');

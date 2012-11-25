@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 24-11-2012 a las 18:51:49
+-- Tiempo de generación: 25-11-2012 a las 15:03:15
 -- Versión del servidor: 5.5.24-log
 -- Versión de PHP: 5.3.13
 
@@ -54,7 +54,7 @@ CREATE TABLE IF NOT EXISTS `colaboradores` (
   PRIMARY KEY (`id`),
   KEY `fk_usuarios_has_proyectos_usuarios1` (`usuario_id`),
   KEY `fk_usuarios_has_proyectos_proyectos1` (`proyecto_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;
 
 --
 -- Volcado de datos para la tabla `colaboradores`
@@ -65,7 +65,8 @@ INSERT INTO `colaboradores` (`id`, `proyecto_id`, `usuario_id`, `fecha`) VALUES
 (2, 2, 2, '2012-11-24 11:46:36'),
 (3, 2, 2, '2012-11-24 11:46:36'),
 (4, 2, 2, '2012-11-24 11:50:02'),
-(5, 2, 2, '2012-11-24 11:50:05');
+(5, 2, 2, '2012-11-24 11:50:05'),
+(6, 2, 2, '2012-11-25 10:02:06');
 
 -- --------------------------------------------------------
 
@@ -183,14 +184,18 @@ CREATE TABLE IF NOT EXISTS `publicaciones` (
   PRIMARY KEY (`id`),
   KEY `fk_publicaciones_categorias1` (`categoria_id`),
   KEY `fk_publicaciones_usuarios1` (`usuario_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
 
 --
 -- Volcado de datos para la tabla `publicaciones`
 --
 
 INSERT INTO `publicaciones` (`id`, `titulo`, `descripcion`, `fecha`, `url_video`, `categoria_id`, `usuario_id`) VALUES
-(1, 'Primera publicacion', 'Mi primera publicacion', '2012-11-23 18:23:57', NULL, 2, 2);
+(1, 'Primera publicacion', 'Mi primera publicacion', '2012-11-23 18:23:57', NULL, 2, 2),
+(2, 'Segunda publicacion', 'Maecenas mattis, tortor ut posuere aliquam, quam enim accumsan purus, auctor placerat orci velit vitae massa. Vivamus non iaculis', '2012-11-24 19:09:32', NULL, 1, 2),
+(3, 'Tercera publicacion', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore ..', '2012-11-24 19:10:02', NULL, 2, 2),
+(4, 'Cuarta publicacion', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore ..', '2012-11-24 19:10:17', NULL, 2, 2),
+(5, 'Quinta publicacion', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud. ', '2012-11-24 19:10:47', NULL, 1, 2);
 
 -- --------------------------------------------------------
 

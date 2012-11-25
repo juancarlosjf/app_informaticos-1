@@ -4,18 +4,7 @@ App::uses('AppModel', 'Model');
 class Publicacione extends AppModel {
 
 	public $displayField = 'titulo';
-	public $actsAs = array(
-        'upload.upload' => array(
-            'imagen' => array(
-            	'fields' => array('dir' => 'dir_imagen' ),                
-                'thumbnailSizes' => array(
-      				'big' => '200x200',
-                    'small' =>'120x120',
-                    'thumb' =>'80x80' ),
-                'thumbnailMethod'=> 'php'
-            				)
-        			)
-    );
+
 	public $belongsTo = array(
 		'Categoria' => array(
 			'className' => 'Categoria',
